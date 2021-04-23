@@ -1,0 +1,566 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+
+  font-family: Arial;
+}
+
+.tablink {
+  background-color: inherit;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+#social-media {
+  background-color: #555;
+
+  color: white;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+.fa {
+  font-size: 30px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.tabcontent {
+  display: none;
+}
+#navbar {
+  display: block;
+  color: #f2f2f2;
+
+  background-color: #555;
+  text-decoration: none;
+  font-size: 17px;
+  top: 0;
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+
+  top: 0;
+  width: 100%;
+}
+
+#Overview {
+  background-color: white;
+  height: 1500px;
+}
+#Services {
+  background-color: peachpuff;
+  height: auto;
+  font-family: Verdana, sans-serif;
+}
+
+#Mission {
+  padding: 2vw 0em;
+}
+#Consultants {
+  background-color: white;
+  padding: 10vw 0em;
+}
+#text-directly-under-welcome {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  color: black;
+}
+
+.more-content {
+  color: #566b78;
+  text-align: left;
+  padding-left: 200px;
+  padding-right: 100px;
+}
+
+.parallax {
+  background-image: url("bigFrog.jpg");
+
+  min-height: 200px;
+
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header {
+  background-image: url("frogs.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+  background-attachment: fixed;
+  height: 600px;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.more-content-title {
+  color: #333;
+  text-align: left;
+  padding-left: 200px;
+}
+/*************************************************************** service tab */
+
+.service-description {
+  /* padding-top: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 15px;
+      text-align: center;
+      background-color: white;
+      width: 40%;
+      margin-left: 200px;*/
+
+  background-color: rgba(255, 255, 255, 0.6);
+  background-size: cover;
+  height: 300px;
+
+  padding-top: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.service-large-display {
+  /*line-height: 1.2;
+      height: 300px;
+      background-repeat: no-repeat;
+    background-size: cover;
+    
+      
+      bottom: 8px;
+      width: 100%;*/
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+#service-large-display-0 {
+  background-image: url("pink.jpg");
+}
+
+#service-large-display-1 {
+  background-image: url("c1.png");
+}
+#service-large-display-2 {
+  background-image: url("blue.jpg");
+}
+#service-large-display-3 {
+  background-image: url("tulip.jpg");
+}
+#service-large-display-4 {
+  background-image: url("rose.jpg");
+}
+#service-large-display-5 {
+  background-image: url("tree.jpg");
+}
+#service-large-display-6 {
+  background-image: url("cloud.jpg");
+}
+
+.service-circle-button-group {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 110px;
+}
+.service-circle-button {
+  height: 120px;
+  width: 120px;
+  text-align: center;
+
+  padding: 0;
+  border-radius: 50%;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+.service-circle-button:hover {
+}
+
+.service-circle-button img {
+  /* margin: auto;
+      height: 60px;
+      width: 60px;
+      outline: none;
+      background-color: white;
+      border-radius: 50%;
+      cursor: pointer;
+      border: none;
+      */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.prev,
+.next {
+  cursor: pointer;
+
+  width: auto;
+  padding: 13px;
+
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+
+.next,
+.prev {
+  border-radius: 3px;
+  margin: 0;
+
+  outline: none;
+  border: none;
+  background-color: peachpuff;
+}
+.next {
+  float: right;
+}
+.prev {
+  float: left;
+}
+.service-carousel-bar {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  margin: auto;
+}
+#service-caption {
+  padding: 15px 0;
+  height: 50px;
+  width: 125px;
+  text-align: center;
+  float: left;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: white;
+}
+/**************************************************************  contact */
+
+.bg-img {
+  background-image: url("sky.jpg");
+
+  min-height: 600px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  color: gray;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  color: gray;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 2px;
+  padding-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  color: gray;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+}
+#subject {
+  height: 115px;
+}
+
+.submit-form {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80px;
+}
+
+.submit-form:hover {
+  background-color: #45a049;
+}
+#box {
+  content: "";
+  display: table;
+  clear: both;
+  width: 600px;
+}
+
+.form-container {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  padding: 40px;
+
+  width: 50%;
+  color: white;
+
+  float: left;
+  margin-top: 100px;
+  margin-left: 130px;
+}
+.address-card {
+  width: 300px;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 3;
+  float: left;
+  color: white;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.address-container {
+  padding: 2px 16px;
+}
+#co-name {
+  font-size: 40px;
+  font-weight: 40px;
+  line-height: 1;
+}
+/********************************************************************** mission */
+.slides {
+  display: none;
+}
+
+.slideshow-container {
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+}
+
+.mission-content {
+  margin-left: 40px;
+  margin-right: 40px;
+  line-height: 1.5;
+}
+
+/********************************************************************* consultants */
+#sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+#sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196f3;
+  display: block;
+}
+
+#sidenav a:hover {
+  color: #064579;
+}
+
+#Consultants {
+  margin-left: 170px;
+}
+
+#sidenav {
+  padding-top: 15px;
+}
+#sidenav a {
+  font-size: 18px;
+}
+
+.collapsible {
+  color: gray;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.col-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 30px;
+}
+.collapsible:hover {
+  color: blue;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible,
+.active:after {
+  content: "\2212";
+}
+
+.column {
+  float: left;
+  width: 21%;
+  margin-bottom: 16px;
+  padding: 0 2px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 10px;
+  line-height: 1.2;
+  padding: 2 2px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

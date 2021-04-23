@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link rel="stylesheet" href="test3.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="test3.js" defer></script>
+<script src="test3parallax.js" defer></script>
+
+
+</head>
+<body>
+<div style="position: relative;">
+<div class="nav" id="navbar">
+  
+  <div class="tablink" id="social-media" ><span><a href="#" class="fa fa-facebook"></a>
+  </span><span><a href="#" class="fa fa-twitter"></a></span><span><a href="#" class="fa fa-linkedin"></a></span></div>
+  
+
+<div class="tablink" onclick="openPage('Overview', this, ' rgb(173, 173, 173)')" id="defaultOpen">Overview</div>
+<div class="tablink" onclick="openPage('Services', this, 'rgb(173, 173, 173)')">Services</div>
+<div class="tablink" onclick="openPage('Contact', this, 'rgb(173, 173, 173)')">Contact</div>
+<div class="tablink" onclick="openPage('Mission', this, 'rgb(173, 173, 173)')">Mission</div>
+<div class="tablink" onclick="openPage('Consultants', this, 'rgb(173, 173, 173)')">Consultants</div>
+</div>
+</div>
+
+<div id="Overview" class="tabcontent" >
+  
+  <header id="header">
+  
+  
+    <h1>Welcome to X</h1>
+    
+      <section id="text-directly-under-welcome">
+        
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+          sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+          veniam, quis nostrud exerci tation ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+          Duis autem vel eum iriure dolor in hendrerit in
+          vulputate velit esse molestie consequat, vel illum dolore 
+          eu feugiat nulla facilisis at vero eros et accumsan
+          et iusto odio dignissim qui blandit praesent luptatum zzril 
+          delenit augue duis dolore te feugait nulla.
+        </p>
+      </section>
+    
+    
+  </header>
+  <div class="parallax" data-rellax-speed="1">
+    
+  </div>
+  <section>
+    <h2 class="more-content-title">More content</h2>
+    <p class = "more-content">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+      sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+      veniam, quis nostrud exerci tation ullamcorper
+      suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+      Duis autem vel eum iriure dolor in hendrerit in
+      vulputate velit esse molestie consequat, vel illum dolore 
+      eu feugiat nulla facilisis at vero eros et accumsan
+      et iusto odio dignissim qui blandit praesent luptatum zzril 
+      delenit augue duis dolore te feugait nulla.
+    </p>
+    </section>
+    <section>
+    <h2 class="more-content-title">Even more content</h2>
+    <p class = "more-content">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+      sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+      veniam, quis nostrud exerci tation ullamcorper
+      suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+      Duis autem vel eum iriure dolor in hendrerit in
+      vulputate velit esse molestie consequat, vel illum dolore 
+      eu feugiat nulla facilisis at vero eros et accumsan
+      et iusto odio dignissim qui blandit praesent luptatum zzril 
+      delenit augue duis dolore te feugait nulla.
+    </p>
+    </section>
+</div>
+
+<div id="Services" class="tabcontent">
+  <div class="service-option" id="service-option-0">
+    
+    <div class="service-large-display" id="service-large-display-0"><div class="service-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+      sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+      veniam, quis nostrud exerci tation ullamcorper
+      suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+      Duis autem vel eum iriure dolor in hendrerit in
+      vulputate velit esse molestie consequat, vel illum dolore 
+      eu feugiat nulla facilisis at vero eros et accumsan
+      et iusto odio dignissim qui blandit praesent luptatum zzril 
+      delenit augue duis dolore te feugait nulla.</div></div>
+    
+  </div>
+  <div class="service-option" id="service-option-1">
+    <div class ="service-large-display" id="service-large-display-1"></div>
+  </div> 
+  <div class="service-option" id="service-option-2">
+    <div class ="service-large-display" id="service-large-display-2"></div>
+  </div> 
+  <div class="service-option" id="service-option-3">
+    <div class ="service-large-display" id="service-large-display-3"></div>
+  </div> 
+  <div class="service-option" id="service-option-4">
+    <div class ="service-large-display" id="service-large-display-4"></div>
+  </div> 
+  <div class="service-option" id="service-option-5">
+    <div class ="service-large-display" id="service-large-display-5"></div>
+  </div> 
+  <div class="service-option" id="service-option-6">
+    <div class ="service-large-display" id="service-large-display-6"></div>
+  </div> 
+  
+  
+  
+    <div class= "service-carousel-bar">
+      <div  class="prev" onclick="plusDiv(-1)">&#10094;</div>
+      <div id="service-caption"> slafjdsklfjdk</div>
+       <div  class="next" onclick="plusDiv(1)">&#10095;</div>
+   
+      </div>
+   
+ 
+  <div class="service-circle-button-group" >
+
+    <span  class="service-circle-button" onclick="openSlide('service-option-2')"><img src = balls.jpg></span>
+    <span  class="service-circle-button" onclick="openSlide('service-option-3')"><img src = square.jpg></span>
+
+
+  <span class="service-circle-button" onclick="openSlide('service-option-1')"><img src = drizzle.jpg></span>
+
+
+    
+  
+ 
+</div>
+<div class="service-circle-button-group" >
+  <span  class="service-circle-button" onclick="openSlide('service-option-3')"><img src =square.jpg></span>
+
+
+
+  <span  class="service-circle-button" onclick="openSlide('service-option-5')"><img src = dark.jpg></span>
+  <span  class="service-circle-button" onclick="openSlide('service-option-6')"><img src = sky.jpg></span>
+
+   
+
+
+</div>
+<div class="service-circle-button-group" >
+
+      <span class="service-circle-button" onclick="openSlide('service-option-1')"><img src = drizzle.jpg></span>
+
+
+  <span  class="service-circle-button" onclick="openSlide('service-option-2')"><img src = dark.jpg></span>
+
+
+  <span class="service-circle-button" onclick="openSlide('service-option-4')"><img src =beans.jpg></span>
+
+
+
+  
+ 
+
+</div>
+
+  
+</div>
+
+<div id="Contact" class="tabcontent">
+ 
+    <style>
+     
+      </style>
+      
+    <div class="bg-img">
+      <div id="#box">
+      <div class="form-container">
+        <form action="action_page.php">
+      
+          <label >Full Name *</label>
+          <br>
+          <input type="text" id="fname"  >
+          <div id="validator"></div>
+      
+          <label >Email</label>
+          <br>
+          <input type="text" id="lname"  >
+      
+          <br>
+      
+          <label>Requests</label>
+          <br>
+          <textarea id="subject" ></textarea>
+      
+          <div class="submit-form" onclick="submitForm()">Send</div>
+      
+        </form> 
+      </div>
+      <div class="address-card">
+  
+        <div class="address-container">
+          
+          <p>
+          <strong id= "co-name">Lorem, Inc.</strong>
+          
+          <br>
+          <strong>Call</strong>
+           : 773-338-1710
+           <br>
+           <strong>Text</strong>
+           : 773-338-1710
+           <br>
+           <strong>Email</strong>
+           : sivia.hellman@ti.htc.edu
+           <br>
+           <strong>Fax</strong>
+           : 773-338-1710
+          </p>
+        </div>
+      </div>
+      </div>
+       
+    
+  
+        
+      
+        <div id="modal" class="modal">
+        
+         
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+              
+              Thank you!
+            </div>
+            <div class="modal-body">
+              We will consider your requests
+              
+            </div>
+            
+          </div>
+        
+        </div>
+     
+    </div>
+</div>
+
+<div id="Mission" class="tabcontent">
+  <style>
+    
+    
+    </style>
+    </head>
+    <body>
+    
+   
+    
+    <div class="slideshow-container">
+    
+    <div class="slides">
+      
+      <img src="sky.jpg" style="width:100%">
+      
+    </div>
+    
+    <div class="slides">
+      
+      <img src="mountains.jpg" style="width:100%">
+      
+    </div>
+    
+    
+    
+    </div>
+    <br>
+    <p class="mission-content">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+      sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+      veniam, quis nostrud exerci tation ullamcorper
+      suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+      Duis autem vel eum iriure dolor in hendrerit in
+      vulputate velit esse molestie consequat, vel illum dolore 
+      eu feugiat nulla facilisis at vero eros et accumsan
+      et iusto odio dignissim qui blandit praesent luptatum zzril 
+      delenit augue duis dolore te feugait nulla.
+    </p>
+    
+    
+    
+  
+
+  
+  
+</div>
+
+<div id="Consultants" class="tabcontent">
+  
+
+    <div id="sidenav" >
+      <button  id="team-a" class="collapsible">Team A</button>
+      <div class="col-content" id="department1" onclick="makePeople('localhost/sticky-business/data2.php?source=employees', 'department1')">Department 1</div>
+      <button class="collapsible"     >Team B</button>
+      <div class="col-content" id="department2" onclick="makePeople('localhost/sticky-business/data2.php?source=teamb', 'department2')">Department 2</div>
+      
+    </div>
+    
+    
+  
+  <style>
+    
+    
+    
+    </style>
+  
+    
+    
+    <br>
+    <div id="row"></div>
+     
+  
+  <template id="recipe-card">
+    
+   
+          
+
+          <div class="column">
+            <div class="card">
+              <img class = "card-image" src=""  style="width:100%">
+              <div class="container">
+                <h2 class="name"></h2>
+          
+          <p class="description"></p>
+          <p class="email"></p>
+                
+              </div>
+            </div>
+         
+       
+          
+      </div> 
+          
+       
+   
+  </template> 
+  
+       
+
+    
+  
+
+
+</div>
+
+   
+</body>
+
+</html> 
